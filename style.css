@@ -3,6 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Roboto, sans-serif;
+  min-height: 100vh;
 }
 
 .header {
@@ -10,6 +11,13 @@ body {
   background-color: #1f2937;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
 }
 
 .header-text {
@@ -24,13 +32,67 @@ ul {
   gap: 10px;
 }
 
-a {
+a,
+.text {
   color: #e5e7eb;
   font-size: 18px;
   text-decoration: none;
 }
 
-.container {
+.hero-container {
+  display: flex;
+  flex-direction: column;
   background-color: #1f2937;
+}
+
+.hero {
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+button {
+  background-color: #3882f6;
+  border-radius: 8px;
+  border: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.top-container {
+  display: flex;
+  background-color: #1f2937;
+}
+
+.quote-container {
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.call-to-action-container {
+  background-color: #3882f6;
   display: flex;
 }
